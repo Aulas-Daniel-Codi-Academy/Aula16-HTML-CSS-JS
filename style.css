@@ -1,3 +1,4 @@
+/* Reset e configurações globais */
 body {
   font-family: "Arial", sans-serif;
   background-color: #121212;
@@ -7,10 +8,27 @@ body {
   padding: 20px;
 }
 
+/* Título */
 h1 {
   margin-bottom: 20px;
 }
 
+/* Botão de reinício */
+#restartBtn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  background-color: #333;
+  color: white;
+  border: 1px solid #888;
+  border-radius: 5px;
+}
+#restartBtn:hover {
+  background-color: #444;
+}
+
+/* Grade do tabuleiro */
 .game-board {
   display: grid;
   grid-template-columns: repeat(4, 100px);
@@ -19,6 +37,7 @@ h1 {
   margin: 20px auto;
 }
 
+/* Cartas do jogo */
 .card {
   width: 100px;
   height: 100px;
@@ -34,16 +53,19 @@ h1 {
   transition: background-color 0.3s;
 }
 
+/* Quando uma carta está virada */
 .card.revealed {
   background-color: #e91e63;
   color: white;
 }
 
+/* Quando uma carta foi corretamente combinada */
 .card.matched {
   background-color: #4caf50;
   cursor: default;
 }
 
+/* Texto de status */
 #status {
   margin-top: 20px;
   font-size: 1.2rem;
